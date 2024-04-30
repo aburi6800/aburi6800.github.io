@@ -1,3 +1,3 @@
-# aburi6800.github.io
+# aburi6800のホームページ
 
 - 工事中
