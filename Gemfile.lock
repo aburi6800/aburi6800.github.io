@@ -213,16 +213,6 @@ GEM
     minitest (5.22.3)
     net-http (0.4.1)
       uri
-    nokogiri (1.16.4-aarch64-linux)
-      racc (~> 1.4)
-    nokogiri (1.16.4-arm-linux)
-      racc (~> 1.4)
-    nokogiri (1.16.4-arm64-darwin)
-      racc (~> 1.4)
-    nokogiri (1.16.4-x86-linux)
-      racc (~> 1.4)
-    nokogiri (1.16.4-x86_64-darwin)
-      racc (~> 1.4)
     nokogiri (1.16.4-x86_64-linux)
       racc (~> 1.4)
     octokit (4.25.1)
@@ -256,11 +246,14 @@ GEM
       ethon (>= 0.9.0)
     tzinfo (1.2.11)
       thread_safe (~> 0.1)
+    tzinfo-data (1.2024.1)
+      tzinfo (>= 1.0.0)
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.9.1)
     unicode-display_width (1.8.0)
     uri (0.13.0)
+    wdm (0.1.1)
     webrick (1.8.1)
     zeitwerk (2.6.13)
 
@@ -274,6 +267,14 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages (~> 227)
+  http_parser.rb (~> 0.6.0)
+  jekyll (~> 3.9.2)
+  jekyll-feed (~> 0.6)
+  kramdown-parser-gfm
+  minima (~> 2.0)
+  tzinfo (~> 1.2)
+  tzinfo-data
+  wdm (~> 0.1.0)
   webrick
 
 BUNDLED WITH
