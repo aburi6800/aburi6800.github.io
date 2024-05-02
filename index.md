@@ -1,6 +1,6 @@
 ---
-layout: page
-title: aburi6800 labo.
+layout: home
+title: aburi6800 lab.
 ---
 
 ## このページについて
