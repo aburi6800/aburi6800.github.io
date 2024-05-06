@@ -17,8 +17,24 @@ github pagesで公開する前にローカルでの動作確認をするため�
 
 <br>
 
+## githubリポジトリの作成
+
+まずは、githubに「`<user>.github.io`」の名前でリポジトリを作成し、ローカルにcloneする。リポジトリ名に大文字は使用不可。  
+また「Initialize this repository with a README」にチェックを入れ、可視性はpublicにする。  
+
+<br>
+
+## githubビルド設定
+
+githubのサイトで、対象リポジトリのSettingsに入り、左メニューからPagesを選択。「Branch」のところで、対象のブランチとホームディレクトリとするパスを選択。  
+push後は自動的にビルドとデプロイが行われ、公開される。urlはリポジトリ名と同じ。  
+ビルド時にエラーが発生した場合は、対象リポジトリのActionから状況が確認できる。  
+
+<br>
+
 ## rubyの環境設定
 
+続いてローカル環境の設定を行う。  
 静的コンテンツを生成するツールとして、[jekyll](https://jekyllrb-ja.github.io/)を使用する。  
 jekyllはruby上で動作するので、まずはrubyのセットアップを行う。  
 
@@ -48,9 +64,9 @@ $ gem install jekyll bundlr
 ```
 
 その後、プロジェクトのルートディレクトリで以下を実行し、サイトの初期化を行う。  
+$ mkdir <プロジェクトディレクトリ>
 
 ```
-$ mkdir <プロジェクトディレクトリ>
 $ cd  <プロジェクトディレクトリ>
 $ jekyll new ./ --force
 ```
@@ -190,22 +206,7 @@ To use retry middleware with Faraday v2.0+, install `faraday-retry` gem
 
 > ubuntu22.04環境では、タスク実行時にコマンドが見つからないというエラーが発生した。  
 > VS Codeの設定で`inherit env`で検索、チェックを外して再起動することで解消した。  
-> が、本来はワークスペース単位でパスの設定やgemファイルも管理すべきだと思うので、この方法はあまり良い解決策とは言えない。  
-
-<br>
-
-## githubリポジトリの作成
-
-githubに「`<user>.github.io`」の名前でリポジトリを作成し、ローカルにcloneする。大文字は使用不可。  
-また「Initialize this repository with a README」にチェックを入れ、可視性はpublicにする。  
-
-<br>
-
-## githubビルド設定
-
-対象リポジトリのSettingsに入り、左メニューからPagesを選択。「Branch」のところで、対象のブランチとホームディレクトリとするパスを選択。  
-push後は自動的にビルドとデプロイが行われ、公開される。urlはリポジトリ名と同じ。  
-ビルド時にエラーが発生した場合は、対象リポジトリのActionから状況が確認できる。  
+> ただし、この方法はおそらくVSCodeの思想上ベストではなく、`.code-workspace`ファイルにパスを設定するべきだと考える。  
 
 <br>
 
