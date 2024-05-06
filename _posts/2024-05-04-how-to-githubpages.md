@@ -38,39 +38,68 @@ $ source ~/.bashrc
 
 <br>
 
-## jekyllの環境設定
+### jekyllの環境設定
 
 続いて、jekyllをインストールする。  
 jekyllはrubyライブラリとして提供されているため、`gem`コマンドを使用する。  
 
-> bundlerはruby2.6.0以降から標準添付されているため、明示的にインストールする必要はない。
-
 ```
-$ gem install jekyll
+$ gem install jekyll bundlr
 ```
 
-その後、プロジェクトのルートディレクトリで以下を実行し、サイトの初期化を行う。
+その後、プロジェクトのルートディレクトリで以下を実行し、サイトの初期化を行う。  
 
 ```
-$ bundle exec jekyll new ./ --force
+$ mkdir <プロジェクトディレクトリ>
+$ cd  <プロジェクトディレクトリ>
+$ jekyll new ./ --force
 ```
 
-`Gemfile`ファイルが出来ているので、以下の内容を追記する。  
+<br>
 
+各種ファイルの中に`Gemfile`ファイルが出来ているので、編集する。  
+まず、以下の行をコメントアウトする。
+
+- 修正前
 ```
-gem "github-pages", "~> 227", group: :jekyll_plugins
+gem "jekyll", "~> 4.3.3"
+```
+
+- 修正後
+```
+#gem "jekyll", "~> 4.3.3"
+```
+
+<br>
+
+続いて、以下の行を修正・追加する。
+
+- 修正前
+```
+# If you want to use GitHub Pages, remove the "gem "jekyll"" above and
+# uncomment the line below. To upgrade, run `bundle update github-pages`.
+# gem "github-pages", group: :jekyll_plugins
+```
+
+- 修正後
+```
+# If you want to use GitHub Pages, remove the "gem "jekyll"" above and
+# uncomment the line below. To upgrade, run `bundle update github-pages`.
+gem "github-pages", group: :jekyll_plugins
 gem "webrick"
 ```
 
-`bundler`を使用してインストールする。
+<br>
+
+その後、`bundler`を使用してインストールする。  
 
 ```
 $ bundle install
 ```
 
-> `bundle`はbundlerを起動するコマンドで、`install`はgemをインストールするサブコマンド。  
-> このコマンドでbundlerをGemfileを読み、依存するgemのバーションを調べ、`Gemfile.lock`というファイルに書きだす。  
-> `bundle exec`とすると、このGemfile.lockに書かれたバージョンのgemを起動する。  
+> `bundle`はbundlerを起動するコマンドで、`install`はgemをインストールするサブコマンド。
+> このコマンドでbundlerをGemfileを読み、依存するgemのバーションを調べ、`Gemfile.lock`というファイルに書きだす。
+> `bundle exec`とすると、このGemfile.lockに書かれたバージョンのgemを起動する。
 
 <br>
 
@@ -123,20 +152,31 @@ To use retry middleware with Faraday v2.0+, install `faraday-retry` gem
         {
             "label": "Jekyll Start",
             "type": "shell",
+            "command": "bundle",
+            "args": ["exec", "jekyll", "serve"],
             "options": {
                 "cwd": "${workspaceFolder}"
             },
-            "command": "bundle exec jekyll serve"
         },
+
         {
             "label": "Jekyll Build",
             "type": "shell",
-            "command": "bundle exec jekyll build"
+            "command": "bundle",
+            "args": ["exec", "jekyll", "build"],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
         },
+
         {
             "label": "Jekyll Clean",
             "type": "shell",
-            "command": "bundle exec jekyll clean"
+            "command": "bundle",
+            "args": ["exec", "jekyll", "clean"],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
         }
     ]
 }
@@ -147,6 +187,10 @@ To use retry middleware with Faraday v2.0+, install `faraday-retry` gem
 - Jekyll Start ... 起動
 - Jekyll Buikd ... ビルドのみ実行
 - Jekyll Clean ... 生成したコンテンツを削除
+
+> ubuntu22.04環境では、タスク実行時にコマンドが見つからないというエラーが発生した。  
+> VS Codeの設定で`inherit env`で検索、チェックを外して再起動することで解消した。  
+> が、本来はワークスペース単位でパスの設定やgemファイルも管理すべきだと思うので、この方法はあまり良い解決策とは言えない。  
 
 <br>
 
