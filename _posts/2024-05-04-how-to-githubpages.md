@@ -5,8 +5,17 @@ date:   2024-05-04 03:00:00 +0900
 categories: jekyll github
 ---
 
+初版 2024/05/04  
+改訂 2024/05/09  
+
+-----
+
+<br>
+
+## 概略
+
 github pagesで公開する前にローカルでの動作確認をするための環境を用意するメモ。  
-ドキュメントを読んでもさっぱりわからず、色々と調べてみたのでまとめておく。  
+公式ドキュメントを読んでもさっぱりわからず、色々と調べてみたのでまとめておく。  
 
 <br>
 
@@ -64,9 +73,9 @@ $ gem install jekyll bundlr
 ```
 
 その後、プロジェクトのルートディレクトリで以下を実行し、サイトの初期化を行う。  
-$ mkdir <プロジェクトディレクトリ>
 
 ```
+$ mkdir <プロジェクトディレクトリ>
 $ cd  <プロジェクトディレクトリ>
 $ jekyll new ./ --force
 ```
@@ -77,11 +86,13 @@ $ jekyll new ./ --force
 まず、以下の行をコメントアウトする。
 
 - 修正前
+
 ```
 gem "jekyll", "~> 4.3.3"
 ```
 
 - 修正後
+
 ```
 #gem "jekyll", "~> 4.3.3"
 ```
@@ -91,6 +102,7 @@ gem "jekyll", "~> 4.3.3"
 続いて、以下の行を修正・追加する。
 
 - 修正前
+
 ```
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
@@ -98,6 +110,7 @@ gem "jekyll", "~> 4.3.3"
 ```
 
 - 修正後
+
 ```
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
