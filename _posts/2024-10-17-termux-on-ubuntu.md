@@ -300,6 +300,13 @@ https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on
 $ sudo apt install git
 ```
 
+最低限、以下を設定しておく。
+
+```shell
+$ git config --global user.name "<ユーザー名>"
+$ git config --global user.emale "<メールアドレス>"
+```
+
 <br>
 
 ### codeserverのインストール・設定
