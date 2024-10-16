@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Android端末にtermux on ubuntu環境を構築する"
-date:   2024-05-27 15:40:00 +0900
+date:   2024-10-17 01:18:00 +0900
 categories: android termux ubuntu
 ---
 
@@ -25,7 +25,7 @@ Android端末に、LinuxのCUI環境を構築する。
 ### Termuxのインストール
 
 現在、TermuxはF-DROIDでapkファイルが配布されている。  
-[https://f-droid.org/]
+https://f-droid.org/
 
 上記サイトからF-DROIDのapkをダウンロード・インストール。  
 その後、F-DROIDからTermuxを検索してapkをダウンロード、インストールする。  
@@ -258,7 +258,7 @@ $ sudo apt install python-is-python3
 
 > 通常は`python3`コマンドになるが、最後のパッケージを入れることで、`python`コマンドでPython3が実行されるようになる。  
 
-pipの実行例。`sudo`しないとエラーになる。
+pipの実行例。
 
 ```shell
 $ sudo pip install --upgrade pip
@@ -300,6 +300,13 @@ https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on
 $ sudo apt install git
 ```
 
+最低限、以下を設定しておく。
+
+```shell
+$ git config --global user.name "<ユーザー名>"
+$ git config --global user.emale "<メールアドレス>"
+```
+
 <br>
 
 ### codeserverのインストール・設定
@@ -334,13 +341,6 @@ http://127.0.0.1:8080/
 ```shell
 $ sudo apt install cmake
 ```
-
-<br>
-
-### その他の設定
-
-- z88dk
-[OSS/z88dkインストール](:/080a0125d2a448238b92437f9e4e1af2#z88dkインストール)
 
 <br>
 
