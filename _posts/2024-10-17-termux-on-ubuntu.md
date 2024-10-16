@@ -25,7 +25,7 @@ Android端末に、LinuxのCUI環境を構築する。
 ### Termuxのインストール
 
 現在、TermuxはF-DROIDでapkファイルが配布されている。  
-[https://f-droid.org/]
+https://f-droid.org/
 
 上記サイトからF-DROIDのapkをダウンロード・インストール。  
 その後、F-DROIDからTermuxを検索してapkをダウンロード、インストールする。  
@@ -258,7 +258,7 @@ $ sudo apt install python-is-python3
 
 > 通常は`python3`コマンドになるが、最後のパッケージを入れることで、`python`コマンドでPython3が実行されるようになる。  
 
-pipの実行例。`sudo`しないとエラーになる。
+pipの実行例。
 
 ```shell
 $ sudo pip install --upgrade pip
@@ -334,13 +334,6 @@ http://127.0.0.1:8080/
 ```shell
 $ sudo apt install cmake
 ```
-
-<br>
-
-### その他の設定
-
-- z88dk
-[OSS/z88dkインストール](:/080a0125d2a448238b92437f9e4e1af2#z88dkインストール)
 
 <br>
 
