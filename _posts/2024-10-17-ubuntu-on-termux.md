@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Android端末にtermux on ubuntu環境を構築する"
+title:  "Android端末にubuntu on termux環境を構築する"
 date:   2024-10-17 01:18:00 +0900
 categories: android termux ubuntu
 ---
