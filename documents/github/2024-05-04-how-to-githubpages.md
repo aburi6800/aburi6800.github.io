@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title:  "github pagesのローカル開発メモ"
 date:   2024-05-04 03:00:00 +0900
 categories: jekyll github
@@ -238,7 +238,7 @@ permalink: <html生成先のパス・ファイル名>
 
 各パラメタの値は以下の通り。  
 
-- layout ... (省略可)各テンプレートで定義されたレイアウト名を指定する。
+- layout ... (省略可)各テンプレートで定義されたレイアウト名を指定する。postのようにタイトルを自動表示したいときは`page`とする。
 - title ... (省略可)ページタイトルを記述する。
 - description ... (省略可)ページの説明を記述する。
 - permalink ... (省略可)たとえば`docs/test`と書くと、`_site/docs/test.html`のファイル名で生成される。

@@ -1,12 +1,12 @@
 ---
-layout: post
+layout: page
 title:  "MSXPenのプログラムテンプレート"
 date:   2024-05-07 01:30:00 +0900
 categories: msx msxpen
 ---
 
 初版 2024/05/07  
-改訂  
+改訂 2025/02/10
 
 -----
 
@@ -26,13 +26,14 @@ MSXPenの「Basic」タブに記載するテンプレート。
 小数演算が必要な場合は、`DEFINTA-Z`の部分を適宜修正する。
 
 ```
-100 SCREEN1,2,0:WIDTH32:KEYOFF:COLOR15,1,1:DEFINTA-Z
-110 CLEAR200,&HBFFF:DEFUSR=&HC000:R=RND(-TIME)
+100 SCREEN 1,2,0:WIDTH 32:KEY OFF:COLOR 15,1,1:DEFINT A-Z
+110 CLEAR 200,&HC000:DEFUSR=&HC000:R=RND(-TIME)
 120 BLOAD "PROGRAM.BIN"
 130 R=INT(RND(1)*9)+1:PRINT R
 130 POKE &HC100,R
 140 A=USR(0)
-150 PRINT PEEK(&HC101)
+150 PRINT "IN : " ; PEEK(&amp;HC100)
+160 PRINT "OUT: " ; PEEK(&amp;HC101)
 ```
 
 <br>
@@ -47,9 +48,11 @@ START:
 	; 開始アドレス
 	ORG	0xC000
 
+	; ロジックを記述
 	LD A,(INDATA)
 	ADD A,1
 	LD (OUTDATA),A
+
 	; BASICに戻る
 	RET
 
