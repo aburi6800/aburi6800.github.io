@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title:  "X-BASICメモ"
 date:   2024-05-27 15:40:00 +0900
 categories: x68000 xbasic

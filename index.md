@@ -7,6 +7,7 @@ title: aburi6800 lab.
 
 - [git/github関連](documents/github/README.html)
 - [MSX関連](documents/msx//README.html)
+- [X68000関連](documents/x68k//README.html)
 
 <br>
 
