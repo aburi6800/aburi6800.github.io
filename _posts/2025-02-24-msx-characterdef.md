@@ -41,56 +41,56 @@ MSXではSCREEN1（テキストモード）のまま、VDPをSCREEN2（グラフ
 ```
 START:
 LDIRVM:     EQU 0x005C                  ; BIOS LDIRVM
-	ORG 0xC000
+    ORG 0xC000
 
-	; パターンジェネレータテーブル・カラーテーブル設定
-	; BASICプログラムでスクリーンモード等設定済の前提で呼び出すこと
-	CALL SET_PTN_TBL
-	CALL SET_COL_TBL
-	CALL SET_SPRPTN_TBL
-	RET
+    ; パターンジェネレータテーブル・カラーテーブル設定
+    ; BASICプログラムでスクリーンモード等設定済の前提で呼び出すこと
+    CALL SET_PTN_TBL
+    CALL SET_COL_TBL
+    CALL SET_SPRPTN_TBL
+    RET
 
 SET_PTN_TBL:
-	; PATTERN GENERATE TABLE
-	; PAGE 0
-	LD DE,0x0000
-	CALL SET_PTN_TBL_1
-	; PAGE 1
-	LD DE,0x0800
-	CALL SET_PTN_TBL_1
-	; PAGE 2
-	LD DE,0x1000
+    ; PATTERN GENERATE TABLE
+    ; PAGE 0
+    LD DE,0x0000
+    CALL SET_PTN_TBL_1
+    ; PAGE 1
+    LD DE,0x0800
+    CALL SET_PTN_TBL_1
+    ; PAGE 2
+    LD DE,0x1000
 
 SET_PTN_TBL_1:
-	LD HL,BANK_PATTERN_0
-	LD BC,0x0800
-	CALL LDIRVM
-	RET
+    LD HL,BANK_PATTERN_0
+    LD BC,0x0800
+    CALL LDIRVM
+    RET
 
 SET_COL_TBL:
-	; COLOR TABLE
-	; PAGE 0
-	LD DE,0x2000
-	CALL SET_COL_TBL_1
-	; PAGE 1
-	LD DE,0x2800
-	CALL SET_COL_TBL_1
-	; PAGE 2
-	LD DE,0x3000
+    ; COLOR TABLE
+    ; PAGE 0
+    LD DE,0x2000
+    CALL SET_COL_TBL_1
+    ; PAGE 1
+    LD DE,0x2800
+    CALL SET_COL_TBL_1
+    ; PAGE 2
+    LD DE,0x3000
 
 SET_COL_TBL_1:
-	LD HL,BANK_COLOR_0
-	LD BC,0x0800
-	CALL LDIRVM
-	RET
+    LD HL,BANK_COLOR_0
+    LD BC,0x0800
+    CALL LDIRVM
+    RET
 
 SET_SPRPTN_TBL:
-	LD DE,0x3800
-	LD HL,SPRITE_PTN
+    LD DE,0x3800
+    LD HL,SPRITE_PTN
     ; BCレジスタにはパターン数*16の値を設定する
-	LD BC,576
-	CALL LDIRVM
-	RET
+    LD BC,576
+    CALL LDIRVM
+    RET
 
 BANK_PATTERN_0:
     ; 以下にパターンジェネレータテーブルのデータを貼り付ける。

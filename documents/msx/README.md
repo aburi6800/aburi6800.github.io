@@ -5,6 +5,6 @@ date:
 categories: msx
 ---
 
-### msxpen
+### MSXpen
 
 - [MSXPenのプログラムテンプレート](2024-05-07-msxpen-template.html)
