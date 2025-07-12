@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "アドベンチャーゲーム制作記"
-date:   2025-07-13 01:00:00 +0900
+date:   2025-07-13 00:00:00 +0900
 categories: msx z88dk
 ---
 
@@ -12,13 +12,12 @@ categories: msx z88dk
 
 <br>
 
-# アドベンチャーゲーム制作記
-
 ## 1. はじめに
 
 MSX1の画像変換ツールを試してみたところ、当時では考えもしなかったレベルでの画面表示ができたことに驚いた。  
 
-![MSXで表示した画像](../resources/2025-07-13-msx-adventure_dev_01.png)
+![MSXで表示した画像](/resources/2025-07-13-msx-adventure_dev_01.png)
+
 以前から、1980年代のコマンド入力式アドベンチャーゲームを作ってみたかったのだが、この手法を取り入れればグラフィックの問題も解決すると考え、試しに小規模なものを作ってみることにした。  
 このドキュメントは、その作成にあたり検討した内容を記載している。  
 
@@ -58,10 +57,10 @@ chatGPT、grok、gemini、copilotを使い、いい感じにできてきたも�
 以下、未使用画像だが、サンプルとして掲載する。  
 
 ラフ画：
-![ラフ画](../resources/2025-07-13-msx-adventure_dev_02.pngimage.png)
+![ラフ画](/resources/2025-07-13-msx-adventure_dev_02.png)
 
 生成結果：
-![生成結果](../resources/2025-07-13-msx-adventure_dev_03.png)
+![生成結果](/resources/2025-07-13-msx-adventure_dev_03.png)
 
 なお、現状のAIは「同じ絵で一部だけ変化した画像」を作るのが苦手で、必ず指定箇所以外もどこか変化してしまう。  
 そのような画像を作る場合は、自分で直接編集した方が速いだろう。ある程度荒くても、次の変換で細かい常法は失われるため、あまり丁寧に加工しなくても良い。
@@ -175,18 +174,24 @@ void main()
 まず、元画像（1,024x768）を60%縮小する。  
 この時の画素数は、後の手順で余分なデータは切り捨てられるので、だいたいで構わない。  
 
-![画像の加工イメージ①](../resources/2025-07-13-msx-adventure_dev_04.png)
+![画像の加工イメージ①](/resources/2025-07-13-msx-adventure_dev_04.png)
+
 <center>
+
 【図】画像の加工イメージ①
+
 </center>
 
 <br>
 
 後の処理がしやすいよう、縮小した画像を左上に配置した1,024x768の画像を作成し、MSXの画像へ変換、データを取得する。  
 
-![画像の加工イメージ②](../resources/2025-07-13-msx-adventure_dev_05.png)
+![画像の加工イメージ②](/resources/2025-07-13-msx-adventure_dev_05.png)
+
 <center>
+
 【図】画像の加工イメージ②
+
 </center>
 
 <br>
@@ -196,9 +201,12 @@ void main()
 データは、横8ドットを1バイト、それが8バイト並んで1キャラクター（下図太枠）を構成する。  
 ※先頭アドレスからのオフセットを記載
 
-![パターンジェネレータテーブル／カラーテーブルのデータの並び](../resources/2025-07-13-msx-adventure_dev_06.png)
+![パターンジェネレータテーブル／カラーテーブルのデータの並び](/resources/2025-07-13-msx-adventure_dev_06.png)
+
 <center>
+
 【図】パターンジェネレータテーブル／カラーテーブルのデータの並び
+
 </center>
 
 <br>
@@ -217,9 +225,12 @@ void main()
 
 以上で、キャラクターコード`0x00`から連続したコードにパターンが設定されるようになったので、あとはパターンネームテーブルの表示したい位置にキャラクターコードを書き込んでおけば良い（非表示の部分は未定義のキャラクターコードで埋めておく）。
 
-![パターンジェネレータテーブルと実際の表示の対応](../resources/2025-07-13-msx-adventure_dev_07.png)
+![パターンジェネレータテーブルと実際の表示の対応](/resources/2025-07-13-msx-adventure_dev_07.png)
+
 <center>
+
 【図】パターンジェネレータテーブルと実際の表示の対応
+
 </center>
 
 <br>
@@ -256,9 +267,12 @@ void main()
 初期処理で一度定義できれば良いため、データは画像と同様に圧縮した。  
 なお、未定義のキャラクターがまだあるので、使用頻度の高い漢字を定義すれば漢字表示も可能である。  
 
-![nMSXtilesの画面](../resources/2025-07-13-msx-adventure_dev_08.png)
+![nMSXtilesの画面](/resources/2025-07-13-msx-adventure_dev_08.png)
+
 <center>
+
 【図】nMSXtilesの画面
+
 </center>
 
 <br>
@@ -531,9 +545,12 @@ switch_bank:
 
 なお、今回のプログラムでのメモリ利用イメージは、以下となっている。
 
-![メモリマップ](../resources/2025-07-13-msx-adventure_dev_09.png)
+![メモリマップ](/resources/2025-07-13-msx-adventure_dev_09.png)
+
 <center>
+
 【図】メモリマップ
+
 </center>
 
 <br>
@@ -577,11 +594,9 @@ switch_bank:
 
 [^3]: このイメージ操作ツールは、[こちら](https://www.lexlechz.at/)で公開されている、DiskManagerを使用している。シェルからイメージファイルをダブルクリックで開くことができて便利。
 
-[^4]: パッチは以下で公開している。
-https://github.com/aburi6800/pletter-patch
+[^4]: パッチの公開先は[こちら](https://github.com/aburi6800/pletter-patch)。
 
-[^5]: nMSXTilesについては、以下で取得可能。
-https://github.com/pipagerardo/nMSXtiles
+[^5]: nMSXTilesについては、[こちら](https://github.com/pipagerardo/nMSXtiles)で取得可能。
 
 [^6]: 結果的に、アセンブリで書いたコードの方が量的に多くなってしまったが…。
 
