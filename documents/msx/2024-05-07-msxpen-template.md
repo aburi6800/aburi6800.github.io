@@ -1,8 +1,8 @@
 ---
 layout: page
-title:  "MSXPenのプログラムテンプレート"
+title:  "MSX/MSXPenのプログラムテンプレート"
 date:   2024-05-07 01:30:00 +0900
-categories: msx msxpen
+categories: msxpen msx-basic z80
 ---
 
 初版 2024/05/07  

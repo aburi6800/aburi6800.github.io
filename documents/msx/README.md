@@ -7,4 +7,4 @@ categories: msx
 
 ### MSXpen
 
-- [MSXPenのプログラムテンプレート](2024-05-07-msxpen-template.html)
+- [MSX/MSXPenのプログラムテンプレート](2024-05-07-msxpen-template.html)

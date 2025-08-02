@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "ubuntuでJavaを使う"
+title:  "Linux/ubuntuでJavaを使う"
 date:   2025-02-10 16:00:00 +0900
 categories: java ubuntu sdkman
 ---
