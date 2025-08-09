@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "github/github pagesのローカル開発メモ"
+title:  "【github】github pagesのローカル開発メモ"
 date:   2024-05-04 03:00:00 +0900
 categories: jekyll
 ---

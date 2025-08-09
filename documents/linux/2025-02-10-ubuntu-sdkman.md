@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Linux/ubuntuでJavaを使う"
+title:  "【Linux】ubuntuでJavaを使う"
 date:   2025-02-10 16:00:00 +0900
 categories: java ubuntu sdkman
 ---
@@ -90,5 +90,3 @@ $ sdk list gradle
 $ sdk install gradle 6.8
 ```
 
-
-[def]: :/2025-02-10-ubuntu-sdkman-1.png

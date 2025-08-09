@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "X68000/X-BASICメモ"
+title:  "【X68000】X-BASICメモ"
 date:   2024-05-27 15:40:00 +0900
 categories: xbasic
 ---

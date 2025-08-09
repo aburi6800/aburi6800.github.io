@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "MSX/アドベンチャーゲーム制作記"
+title:  "【MSX】アドベンチャーゲーム制作記"
 date:   2025-07-13 00:00:00 +0900
 categories: z88dk
 ---

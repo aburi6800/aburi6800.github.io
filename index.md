@@ -5,10 +5,10 @@ title: aburi6800 lab.
 
 ## Contents
 
-- [git/github関連](documents/github/README.html)
-- [Linux関連](documents/linux/README.html)
-- [MSX関連](documents/msx//README.html)
-- [X68000関連](documents/x68k//README.html)
+- [git/github](documents/github/README.html)
+- [Linux](documents/linux/README.html)
+- [MSX](documents/msx//README.html)
+- [X68000](documents/x68k//README.html)
 
 <br>
 

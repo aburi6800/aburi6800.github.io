@@ -1,10 +1,10 @@
 ---
 layout: page
-title:  "MSX関連"
+title:  "MSX"
 date:   
 categories: msx
 ---
 
 ### MSXpen
 
-- [MSX/MSXPenのプログラムテンプレート](2024-05-07-msxpen-template.html)
+- [MSXPenのプログラムテンプレート](2024-05-07-msxpen-template.html)
