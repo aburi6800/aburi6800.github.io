@@ -1,19 +1,18 @@
 ---
 layout: post
-title:  "WSL2/podmanセットアップ"
+title:  "podman/WSL2環境へのセットアップ"
 date:   2025-08-02 00:00:00 +0900
-categories: podman
+categories: WSL2
 ---
 
 初版 2025/08/02  
-改訂 
+改訂 2025/08/09
 
 -----
 
 <br>
 
 ## インストール
----
 
 リポジトリから入れた。  
 
@@ -59,7 +58,6 @@ lrwxrwxrwx 1 hitoshi hitoshi 15  8月  2 11:15 /home/hitoshi/.local/bin/docker -
 <br>
 
 ## Dockerハブを構成する
----
 
 ```
 hitoshi@infinity:~$ mkdir -p ~/.config/containers
@@ -76,7 +74,8 @@ hitoshi@infinity:~$ > ~/.config/containers/registries.conf cat <<EOF
 <br>
 
 ## 動作確認
----
+
+軽量Webサーバ`nginx`のコンテナでテストする。
 
 ```
 hitoshi@infinity:~$ podman run -d --name nginxtest -p 8080:80 library/nginx:1.23.3-alpine
