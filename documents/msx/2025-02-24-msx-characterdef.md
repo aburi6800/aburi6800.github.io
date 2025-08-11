@@ -6,13 +6,15 @@ categories: msx-basic
 ---
 
 初版 2025/02/25  
-改訂 
+改訂 2025/08/11
 
 -----
 
 <br>
 
-MSXではSCREEN1（テキストモード）のまま、VDPをSCREEN2（グラフィックモード）に変更することで、横8ドット単位に2色（前景・背景）を割り当てることができる。  
+## はじめに
+
+MSXではSCREEN1（テキストモード）のまま、VDPをSCREEN2（グラフィックモード）に変更することで、カラーテーブルに横8ドット単位に2色（前景・背景）を割り当てることができる。  
 しかし、BASICプログラムで定義すると時間がかかるため、マシン語を使って高速化する。  
 なお、プログラムは`MSXPen`で使用する前提としているが、任意のコンパイラでコンパイルし、バイナリのファイル名を`program.bin`としてBASICプログラムと同じディレクトリに保存（フロッピーディスクの場合）、またはBASICプログラムの後にセーブ（カセットテーブの場合）することで、`MSXPen`環境以外でも利用可能となる。  
 
@@ -22,12 +24,13 @@ MSXではSCREEN1（テキストモード）のまま、VDPをSCREEN2（グラフ
 
 プログラムは、`DB`定義したデータをVRAMにブロック転送するだけの簡単なもの。  
 データは非圧縮（ベタ）で定義されたものであるため、同じようなデータを作成することで他のツールで作成したデータも使用可能。  
-なお、グラフィックモードでは、パターンジェネレータテーブルとカラーテーブルは256バイトずつ3つの領域（PAGE0～2）に別れて定義されているが、このプログラムではPAGE0と同じデータをPAGE1,2にも設定する内容としている。各ページのデータを用意し、簡単な改修を行うことで、各PAGEに別データを設定することも可能である。  
-また、スプライトパターンも同時に定義するようにしているが、スプライトを使用しない場合は`CALL SET_SPRPTN_TBL`を削除し、ラベル`SET_SPRPTN_TBL`のブロックと、最後の方に定義した`SPRITE_PTN:`のラベルを削除する。  
+なお、グラフィックモードでは、パターンジェネレータテーブルとカラーテーブルは256バイトずつ3つの領域（PAGE0～2）に別れて定義されているが、このプログラムではPAGE0と同じデータをPAGE1,2にも設定する内容としている。  
+各ページのデータを別に定義する場合は、簡単な改修を行うことで対応可能である。  
+また、スプライトパターンも同時に定義するようにしているが、スプライトを使用しない場合は`CALL SET_SPRPTN_TBL`を削除し、ラベル`SET_SPRPTN_TBL`のブロックと、最後の方に定義した`SPRITE_PTN:`のラベルを削除すること。  
 
 <br>
 
-データ形式は以下を想定している。  
+ここで使用するデータ形式は以下を想定している。  
 - パターンジェネレータテーブル・カラーテーブル
 	`nMSXtiles`のASM Data形式でエクスポートしたデータ  
 - スプライトパターン
@@ -53,42 +56,42 @@ LDIRVM:     EQU 0x005C                  ; BIOS LDIRVM
 SET_PTN_TBL:
     ; PATTERN GENERATE TABLE
     ; PAGE 0
-    LD DE,0x0000
+    LD DE,0x0000        ; DIST ADDR.
     CALL SET_PTN_TBL_1
     ; PAGE 1
-    LD DE,0x0800
+    LD DE,0x0800        ; DIST ADDR.
     CALL SET_PTN_TBL_1
     ; PAGE 2
-    LD DE,0x1000
+    LD DE,0x1000        ; DIST ADDR.
 
 SET_PTN_TBL_1:
     LD HL,BANK_PATTERN_0
-    LD BC,0x0800
+    LD BC,0x0800        ; DATA SIZE
     CALL LDIRVM
     RET
 
 SET_COL_TBL:
     ; COLOR TABLE
     ; PAGE 0
-    LD DE,0x2000
+    LD DE,0x2000        ; DIST ADDR.
     CALL SET_COL_TBL_1
     ; PAGE 1
-    LD DE,0x2800
+    LD DE,0x2800        ; DIST ADDR.
     CALL SET_COL_TBL_1
     ; PAGE 2
-    LD DE,0x3000
+    LD DE,0x3000        ; DIST ADDR.
 
 SET_COL_TBL_1:
     LD HL,BANK_COLOR_0
-    LD BC,0x0800
+    LD BC,0x0800        ; DATA SIZE
     CALL LDIRVM
     RET
 
 SET_SPRPTN_TBL:
-    LD DE,0x3800
+    LD DE,0x3800        ; DIST ADDR.
     LD HL,SPRITE_PTN
     ; BCレジスタにはパターン数*16の値を設定する
-    LD BC,576
+    LD BC,512
     CALL LDIRVM
     RET
 
