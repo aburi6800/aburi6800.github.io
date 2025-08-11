@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "【MSX】MSX2でMSX1の色合いにする"
-date:   2025-08-10 00:00:00 +0900
+date:   2025-08-10 12:00:00 +0900
 categories: msx msx2
 ---
 
