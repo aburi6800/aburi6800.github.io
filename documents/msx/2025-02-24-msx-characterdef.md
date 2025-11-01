@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title:  "【MSX】SCREEN1.5のキャラクタパターン・スプライトを高速に定義する"
 date:   2025-02-24 20:00:00 +0900
 categories: msx-basic
