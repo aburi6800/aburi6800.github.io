@@ -27,16 +27,16 @@ categories: msx msx2
 
 上記1.の方法で、アセンブラでのサンプルプログラムを記載する。  
 
-```assembly
+```asm
 MSXVER              equ 0x002d
 
 VERCHK:
-	LD		A, (MSXVER)
-	OR		A
-	RET		Z
-	:
-	<MSX2以降の処理>
-	:
+    LD      A, (MSXVER)
+    OR      A
+    RET     Z
+      :
+      <MSX2以降の処理>
+      :
 ```
 
 BASICの場合は、以下のようにする。

@@ -6,7 +6,7 @@ categories: linux
 ---
 
 初版 2025/11/01  
-改訂 
+改訂 2026/01/18
 
 -----
 
@@ -23,14 +23,14 @@ node.jsのインストールに少々手こずったため、情報をまとめ�
 少し古いバージョンだが、最も手っ取り早くインストールできる。  
 
 ```shell
-$ sudo apt-get update
-$ sudo apt-get install nodejs npm
+sudo apt-get update
+sudo apt-get install nodejs npm
 ```
 
 なお、そのままではnode.jsのバイナリは`nodejs`という名前になっているが、通常は`node`という名前を期待されるため、以下コマンドでリンクを作成する。  
 
 ```shell
-$ sudo update-alternatives --install /usr/bin/node node /usr/bin/nodejs 10
+sudo update-alternatives --install /usr/bin/node node /usr/bin/nodejs 10
 ```
 
 <br>
@@ -60,7 +60,7 @@ sudo apt-get install nodejs build-essential
 `node.js`の複数バージョンの管理が可能で、最新への更新も簡単なので、こちらを使用するのが良い。  
 まず、`nvm`をgithubの公式リポジトリからインストールする。  
 
-https://github.com/nvm-sh/nvm  
+[https://github.com/nvm-sh/nvm](https://github.com/nvm-sh/nvm)
 
 > 当記事執筆時点はv0.40.3だが、バージョンによってURLが変わるので上記URLを確認すること。  
 
@@ -121,4 +121,3 @@ v24.11.0
 $ npm -v
 11.6.1
 ```
-

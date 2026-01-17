@@ -13,3 +13,7 @@ categories: msx
 ## MSXpen
 
 - [MSXPenのプログラムテンプレート](2024-05-07-msxpen-template.html)
+
+## 開発メモ
+
+- [アドベンチャーゲーム制作記](2025-07-13-msx-adventure_dev.md)
