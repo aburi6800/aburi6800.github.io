@@ -12,3 +12,7 @@ categories: linux
 ### ubuntu
 
 - [ubuntuでJavaを使う](2025-02-10-ubuntu-sdkman.html)
+
+### podman
+
+- [WSL2環境へのセットアップ](2025-08-02-wsl-podman-setup.html)
