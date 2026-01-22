@@ -8,6 +8,7 @@ categories: linux
 ### Termux
 
 - [Android端末にubuntu on termux環境を構築する](2024-10-17-ubuntu-on-termux.html)
+- [termuxにsshサーバを設定する](2025-08-09-termux-sshserver.md)
 
 ### ubuntu
 

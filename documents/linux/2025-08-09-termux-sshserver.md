@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title:  "【Linux】termuxにsshサーバを設定する"
 date:   2025-08-09 00:00:00 +0900
 categories: termux android
@@ -135,5 +135,3 @@ hitoshi@localhost:~$
 ```
 
 失敗した場合は、表示されるメッセージを元に調査・対応すること。  
-
-
