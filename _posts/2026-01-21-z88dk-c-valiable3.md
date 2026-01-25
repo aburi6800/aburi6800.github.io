@@ -6,7 +6,7 @@ categories: z88dk
 ---
 
 初版 2026/01/21  
-改訂
+改訂 2026/01/25  
 
 -----
 
@@ -101,14 +101,14 @@ zcc +msx -lmsxbios --list -subtype=msxdos $1.c -o $1.com
 <br>
 
 ```shell
-$ ./compile.sh ./var2
+$ ./compile.sh ./var3
 ```
 
 <br>
 
 ## 実行結果
 
-![2026-01-18-z88dk-c-valiable1_02.png](/resources/2026-01-18-z88dk-c-valiable3_01.png)
+![2026-01-21-z88dk-c-valiable1_02.png](/resources/2026-01-21-z88dk-c-valiable3_01.png)
 
 - [直接操作](/z88dk/2026/01/18/z88dk-c-valiable1.html)と同じ結果になることがわかる。
 
