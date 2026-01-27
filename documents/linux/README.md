@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title:  "Linux"
 date:   
 categories: linux
@@ -13,6 +13,7 @@ categories: linux
 ### ubuntu
 
 - [ubuntuでJavaを使う](2025-02-10-ubuntu-sdkman.html)
+- [node.jsをインストールする](2025-11-01-linux-install-nodejs.html)
 
 ### podman
 
