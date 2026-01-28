@@ -6,7 +6,7 @@ categories: MSX
 ---
 
 初版 2026/01/27  
-改訂  
+改訂 2026/01/28  
 
 -----
 
@@ -77,7 +77,8 @@ categories: MSX
 
 ## VRAM連続書き込み
 
-- `OUTI`を実行すると、データのアドレス（HL）は自動的にインクリメントされ、同時にカウンタ（B）はデクリメントされる。書き込み先のVRAMアドレスは、VDPにより自動的にインクリメントされる。これを利用して、メモリにある連続したデータを高速にVRAMに送ることができる。
+- `OUTI`を実行すると、データのアドレス（HL）は自動的にインクリメント、カウンタ（B）はデクリメントされ、カウンタがゼロになった時にゼロフラグが立つ。
+- 書き込み先のVRAMアドレスは、VDPにより自動的にインクリメントされる。これを利用して、メモリにある連続したデータを高速にVRAMに送ることができる。
 
 ```asm
     ; ---- SET WRITE ----
@@ -85,7 +86,6 @@ categories: MSX
 
     LD      HL, _data                   ; HL = data addr.
     LD      DE, 0x1800                  ; DE = dist addr.
-    LD      B, 24                       ; B  = row num.
 
 _loop:
     ; ---- SET WRITE ----
@@ -99,10 +99,10 @@ _loop:
     OR      0x40                        ; write mode
     OUT     (C), A
 
-    LD      B, 10                       ; col num
-
     ; ---- WRITE ----
     DEC     C                           ; port #0 address
+    LD      B, 10                       ; col num
+
 _loop_1:
     OUTI
     JP      NZ, _loop_1
