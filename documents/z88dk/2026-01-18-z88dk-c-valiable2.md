@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title:  "【z88dk】C言語/変数(2) ポインタを介した操作"
 date:   2026-01-19 00:00:00 +0900
 categories: z88dk
