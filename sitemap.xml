@@ -1,133 +1,147 @@
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
 <url>
-<loc>https://aburi6800.github.io/</loc>
-<lastmod>2026-02-02T14:40:51+00:00</lastmod>
-<priority>1.00</priority>
+  <loc>https://aburi6800.github.io/</loc>
+  <lastmod>2026-02-04T15:02:02+00:00</lastmod>
+  <priority>1.00</priority>
 </url>
 <url>
-<loc>https://aburi6800.github.io/documents/linux/README.html</loc>
-<lastmod>2026-02-02T14:40:51+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://aburi6800.github.io/documents/linux/README.html</loc>
+  <lastmod>2026-02-04T15:02:02+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://aburi6800.github.io/documents/msx//README.html</loc>
-<lastmod>2026-02-02T14:40:51+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://aburi6800.github.io/documents/msx//README.html</loc>
+  <lastmod>2026-02-04T15:02:02+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://aburi6800.github.io/documents/x68k//README.html</loc>
-<lastmod>2026-02-02T14:40:51+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://aburi6800.github.io/documents/x68k//README.html</loc>
+  <lastmod>2026-02-04T15:02:02+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://aburi6800.github.io/documents/github/README.html</loc>
-<lastmod>2026-02-02T14:40:51+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://aburi6800.github.io/documents/github/README.html</loc>
+  <lastmod>2026-02-04T15:02:02+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://aburi6800.github.io/documents/z88dk/README.html</loc>
-<lastmod>2026-02-02T14:40:51+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://aburi6800.github.io/documents/z88dk/README.html</loc>
+  <lastmod>2026-02-04T15:02:02+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://aburi6800.github.io/z88dk/2026/01/31/z88dk-c-array2.html</loc>
-<lastmod>2026-02-02T14:40:51+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://aburi6800.github.io/z88dk/2026/02/03/z88dk-c-array3.html</loc>
+  <lastmod>2026-02-04T15:02:02+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://aburi6800.github.io/z88dk/2026/01/30/z88dk-c-array1.html</loc>
-<lastmod>2026-02-02T14:40:51+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://aburi6800.github.io/z88dk/2026/01/31/z88dk-c-array2.html</loc>
+  <lastmod>2026-02-04T15:02:02+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://aburi6800.github.io/msx/2026/01/26/msx-vdp-access.html</loc>
-<lastmod>2026-02-02T14:40:51+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://aburi6800.github.io/z88dk/2026/01/30/z88dk-c-array1.html</loc>
+  <lastmod>2026-02-04T15:02:02+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://aburi6800.github.io/z88dk/2026/01/24/z88dk-c-valiable4.html</loc>
-<lastmod>2026-02-02T14:40:51+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://aburi6800.github.io/msx/2026/01/26/msx-vdp-access.html</loc>
+  <lastmod>2026-02-04T15:02:02+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://aburi6800.github.io/z88dk/2026/01/20/z88dk-c-valiable3.html</loc>
-<lastmod>2026-02-02T14:40:51+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://aburi6800.github.io/z88dk/2026/01/24/z88dk-c-valiable4.html</loc>
+  <lastmod>2026-02-04T15:02:02+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://aburi6800.github.io/documents/linux/2024-10-17-ubuntu-on-termux.html</loc>
-<lastmod>2026-02-02T14:40:51+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://aburi6800.github.io/documents/linux/2024-10-17-ubuntu-on-termux.html</loc>
+  <lastmod>2026-02-04T15:02:02+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://aburi6800.github.io/documents/linux/2025-08-09-termux-sshserver.html</loc>
-<lastmod>2026-02-02T14:40:51+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://aburi6800.github.io/documents/linux/2025-08-09-termux-sshserver.html</loc>
+  <lastmod>2026-02-04T15:02:02+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://aburi6800.github.io/documents/linux/2025-02-10-ubuntu-sdkman.html</loc>
-<lastmod>2026-02-02T14:40:51+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://aburi6800.github.io/documents/linux/2025-02-10-ubuntu-sdkman.html</loc>
+  <lastmod>2026-02-04T15:02:02+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://aburi6800.github.io/documents/linux/2025-11-01-linux-install-nodejs.html</loc>
-<lastmod>2026-02-02T14:40:51+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://aburi6800.github.io/documents/linux/2025-11-01-linux-install-nodejs.html</loc>
+  <lastmod>2026-02-04T15:02:02+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://aburi6800.github.io/documents/linux/2025-08-02-wsl-podman-setup.html</loc>
-<lastmod>2026-02-02T14:40:51+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://aburi6800.github.io/documents/linux/2025-08-02-wsl-podman-setup.html</loc>
+  <lastmod>2026-02-04T15:02:02+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://aburi6800.github.io/documents/msx/2025-02-24-msx-characterdef.html</loc>
-<lastmod>2026-02-02T14:40:51+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://aburi6800.github.io/documents/msx/2025-02-24-msx-characterdef.html</loc>
+  <lastmod>2026-02-04T15:02:02+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://aburi6800.github.io/documents/msx/2025-08-11-msx-msxtypedetect.html</loc>
-<lastmod>2026-02-02T14:40:51+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://aburi6800.github.io/documents/msx/2025-08-11-msx-msxtypedetect.html</loc>
+  <lastmod>2026-02-04T15:02:02+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://aburi6800.github.io/documents/msx/2025-08-10-msx-msx2palette.html</loc>
-<lastmod>2026-02-02T14:40:51+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://aburi6800.github.io/documents/msx/2025-08-10-msx-msx2palette.html</loc>
+  <lastmod>2026-02-04T15:02:02+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://aburi6800.github.io/documents/msx/2024-05-07-msxpen-template.html</loc>
-<lastmod>2026-02-02T14:40:51+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://aburi6800.github.io/documents/msx/2024-05-07-msxpen-template.html</loc>
+  <lastmod>2026-02-04T15:02:02+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://aburi6800.github.io/documents/msx/2025-07-13-msx-adventure_dev.html</loc>
-<lastmod>2026-02-02T14:40:51+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://aburi6800.github.io/documents/msx/2025-07-13-msx-adventure_dev.html</loc>
+  <lastmod>2026-02-04T15:02:02+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://aburi6800.github.io/documents/x68k/2024-05-27-x68k-xbasic-memo.html</loc>
-<lastmod>2026-02-02T14:40:51+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://aburi6800.github.io/documents/x68k/2024-05-27-x68k-xbasic-memo.html</loc>
+  <lastmod>2026-02-04T15:02:02+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://aburi6800.github.io/documents/x68k/2025-02-11-x68k-bas2c-memo.html</loc>
-<lastmod>2026-02-02T14:40:51+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://aburi6800.github.io/documents/x68k/2025-02-11-x68k-bas2c-memo.html</loc>
+  <lastmod>2026-02-04T15:02:02+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://aburi6800.github.io/documents/github/2024-05-04-how-to-githubpages.html</loc>
-<lastmod>2026-02-02T14:40:51+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://aburi6800.github.io/documents/github/2024-05-04-how-to-githubpages.html</loc>
+  <lastmod>2026-02-04T15:02:02+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://aburi6800.github.io/documents/z88dk/2026-01-18-z88dk-c-valiable1.html</loc>
-<lastmod>2026-02-02T14:40:51+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://aburi6800.github.io/documents/z88dk/2026-01-18-z88dk-c-valiable1.html</loc>
+  <lastmod>2026-02-04T15:02:02+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://aburi6800.github.io/documents/z88dk/2026-01-18-z88dk-c-valiable2.html</loc>
-<lastmod>2026-02-02T14:40:51+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://aburi6800.github.io/documents/z88dk/2026-01-18-z88dk-c-valiable2.html</loc>
+  <lastmod>2026-02-04T15:02:02+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
+<url>
+  <loc>https://aburi6800.github.io/documents/z88dk/2026-01-21-z88dk-c-valiable3.html</loc>
+  <lastmod>2026-02-04T15:02:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
 </urlset>
