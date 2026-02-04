@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title:  "【z88dk】C言語/変数(3) インラインアセンブラでの変数操作(1)"
 date:   2026-01-21 00:00:00 +0900
 categories: z88dk

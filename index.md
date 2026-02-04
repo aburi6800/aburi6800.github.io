@@ -14,6 +14,12 @@ title: aburi6800 lab.
 
 <br>
 
+## blog
+
+[aburi6800 blog](https://aburi6800.hatenablog.com/)
+
+<br>
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-5X2091379J"></script>
 <script>
