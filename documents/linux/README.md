@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Linux"
-date:   
+date:   2025-11-01 00:00:00 +0900
 categories: linux
 ---
 

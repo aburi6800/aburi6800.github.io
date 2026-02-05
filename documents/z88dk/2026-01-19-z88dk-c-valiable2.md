@@ -101,7 +101,7 @@ $ ./compile.sh ./var2
 
 ## 実行結果
 
-![2026-01-18-z88dk-c-valiable1_02.png](/resources/2026-01-18-z88dk-c-valiable2_01.png)
+![2026-01-19-z88dk-c-valiable1_02.png](/resources/2026-01-19-z88dk-c-valiable2_01.png)
 
 - [直接操作](/z88dk/2026/01/18/z88dk-c-valiable1.html)と同じ結果になることがわかる。
 
