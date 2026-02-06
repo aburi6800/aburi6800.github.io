@@ -7,30 +7,42 @@
             "label": "Jekyll Start",
             "type": "shell",
             "command": "bundle",
-            "args": ["exec", "jekyll", "serve"],
+            "args": [
+                "exec",
+                "jekyll",
+                "serve"
+            ],
             "options": {
                 "cwd": "${workspaceFolder}"
-            },
+            }
         },
-
         {
             "label": "Jekyll Build",
             "type": "shell",
             "command": "bundle",
-            "args": ["exec", "jekyll", "build"],
+            "args": [
+                "exec",
+                "jekyll",
+                "build",
+                "JEKYLL_ENV=production"
+            ],
             "options": {
                 "cwd": "${workspaceFolder}"
             },
+            "problemMatcher": []
         },
-
         {
             "label": "Jekyll Clean",
             "type": "shell",
             "command": "bundle",
-            "args": ["exec", "jekyll", "clean"],
+            "args": [
+                "exec",
+                "jekyll",
+                "clean"
+            ],
             "options": {
                 "cwd": "${workspaceFolder}"
-            },
+            }
         }
     ]
 }
