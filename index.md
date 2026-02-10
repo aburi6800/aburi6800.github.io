@@ -20,11 +20,11 @@ last update : 2026/02/11
 - [git/github](documents/github/README.html)
 - [other OSS](documents/oss/README.html)
 
-</br>
+<br>
 
 ## Blog
 
 [aburi6800 blog](https://aburi6800.hatenablog.com/)
 
-</br>
+<br>
 
