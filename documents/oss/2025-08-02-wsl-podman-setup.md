@@ -2,7 +2,7 @@
 layout: page
 title:  "【podman】WSL2環境へのセットアップ"
 date:   2025-08-02 00:00:00 +0900
-categories: wsl2 podman
+categories: oss wsl2 podman
 ---
 
 初版 2025/08/02  
