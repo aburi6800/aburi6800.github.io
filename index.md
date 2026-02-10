@@ -16,7 +16,7 @@ last update : 2026/02/11
 
 ### OSS
 
-- [z88dk](documents/z88dk/README.html)  <span style='color: red;'>**UPDATE**</span>
+- [z88dk](documents/z88dk/README.html)  <span style='color: orange;'>**UPDATE**</span>
 - [git/github](documents/github/README.html)
 - [other OSS](documents/oss/README.html)
 

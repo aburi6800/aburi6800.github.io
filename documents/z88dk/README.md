@@ -25,7 +25,7 @@ z88dkのインストールは[こちら](https://github.com/z88dk/z88dk/wiki/ins
 
 ### 関数
 
-- [関数(1) 引数の値渡しと参照渡し](2026-02-09-z88dk-c-func1.html) <span style='color: red;'>**NEW**</span>
+- [関数(1) 引数の値渡しと参照渡し](2026-02-09-z88dk-c-func1.html) <span style='color: orange;'>**UPDATE**</span>
 
 ### コードスニペット
 
