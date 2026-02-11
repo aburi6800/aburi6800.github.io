@@ -121,9 +121,9 @@ BASICでは以下のようになる。
 1060 BD=V((YY*16)+XX)+DP
 ```
 
-以下でサンプルプロウラムの動作を確認できる。  
+以下サンプルプログラムで動作を確認できる。  
 
-https://msxpen.com/codes/-Ol9mvQydRpDFTKuB_Ia
+[https://msxpen.com/codes/-Ol9mvQydRpDFTKuB_Ia](https://msxpen.com/codes/-Ol9mvQydRpDFTKuB_Ia)
 
 <br>
 
