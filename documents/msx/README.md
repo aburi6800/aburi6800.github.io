@@ -21,4 +21,5 @@ categories: msx
 
 ## 開発メモ
 
-- [アドベンチャーゲーム制作記](2025-07-13-msx-adventure_dev.md)
+- [アドベンチャーゲーム制作記](2025-07-13-msx-adventure_dev.html)
+- [敵がプレイヤーを狙って16方向で弾を撃つ処理](2026-02-11-msx-16direction.html) <span style='color: red;'>**NEW**</span>

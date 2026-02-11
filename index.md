@@ -11,12 +11,12 @@ last update : 2026/02/11
 ### OS/Platform
 
 - [Linux](documents/linux/README.html)
-- [MSX](documents/msx//README.html)
+- [MSX](documents/msx//README.html) <span style='color: orange;'>**UPDATE**</span>
 - [X68000](documents/x68k//README.html)
 
 ### OSS
 
-- [z88dk](documents/z88dk/README.html)  <span style='color: orange;'>**UPDATE**</span>
+- [z88dk](documents/z88dk/README.html)
 - [git/github](documents/github/README.html)
 - [other OSS](documents/oss/README.html)
 
